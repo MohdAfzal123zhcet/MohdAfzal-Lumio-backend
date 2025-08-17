@@ -12,7 +12,11 @@ import org.springframework.web.client.RestTemplate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://mohdafzal-lumio-frontend-production.up.railway.app/"
+})
+
 
 @RestController
 public class SummaryController {
