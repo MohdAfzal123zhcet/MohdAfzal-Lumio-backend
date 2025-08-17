@@ -17,7 +17,7 @@ import java.util.Map;
 @RestController
 public class SummaryController {
 
-    @Value("${openai.api.key}")
+    @Value("${GROQ_API_KEY}")
     private String openaiApiKey;
 
     @Autowired
