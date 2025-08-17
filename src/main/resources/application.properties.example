@@ -1,6 +1,6 @@
-openai.api.key=PUT_YOUR_KEY_HERE
-spring.mail.host=in-v3.mailjet.com
+GROQ_API_KEY=PUT_YOUR_KEY_HERE
+spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=PUT_YOUR_USERNAME
-spring.mail.password=PUT_YOUR_PASSWORD
+spring.mail.username=your gmail
+spring.mail.password=PUT_YOUR_PASSWORD// your app password not of gmail
 mail.from=PUT_YOUR_VERIFIED_SENDER
