@@ -1,5 +1,6 @@
 package com.ai.meeting_summarizer.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -10,14 +11,11 @@ import java.util.Arrays;
 @Service
 public class EmailService {
 
-    private final JavaMailSender mailSender;
+    @Autowired
+    private JavaMailSender mailSender;
 
     @Value("${mail.from}")
     private String from;
-
-    public EmailService(JavaMailSender mailSender) {
-        this.mailSender = mailSender;
-    }
 
     // Accept multiple recipients
     public void sendEmail(String[] to, String subject, String text) {
